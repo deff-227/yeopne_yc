@@ -22,3 +22,8 @@
 /* Concert letters share a notes-app reading layout; the middle-concert letter remains editable. */
 .first-letter .letter-note{display:block;width:100%;min-height:320px;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;outline:none;resize:none;overflow:hidden;white-space:pre-wrap;overflow-wrap:anywhere;font-family:inherit;font-size:13px;line-height:2.15;letter-spacing:-.2px;color:inherit}
 .first-letter .letter-note:focus{outline:none}
+
+/* Oct 24 shared KakaoTalk: keep the sent portrait inside a normal chat bubble width. */
+.bubble-row .chat-photo-oct24{border:0;padding:0;max-width:72%;border-radius:16px;overflow:hidden;background:#eee5f4;line-height:0;flex-shrink:0}
+.bubble-row .chat-photo-oct24 img{display:block;width:100%;height:auto;max-height:300px;object-fit:cover}
+.bubble-image img{object-fit:contain;max-height:340px}
