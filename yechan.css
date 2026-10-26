@@ -130,3 +130,62 @@
 #shade .shade-player{background:linear-gradient(125deg,#d9c9e6,#eee5ef);border:1px solid #ffffff80;border-radius:24px;padding:15px;margin:11px 0 20px}
 .shade-song{display:flex;align-items:center;gap:12px}.shade-album{display:grid;place-items:center;width:49px;height:49px;background:#b69bc5;border-radius:14px;font-size:25px;color:white}.shade-song>div{flex:1}.shade-song small,.shade-song b,.shade-song div>span{display:block}.shade-song small{font-size:8px;color:#a38ab0}.shade-song b{font-size:12px;font-weight:500;margin:5px 0}.shade-song div>span{font-size:9px;color:#9d83aa}.shade-song button{background:#ffffff80;border-radius:50%;width:35px;height:35px;color:#9474a5}
 #shade-music-frame:empty{display:none}#shade-music-frame iframe{width:100%;height:150px;border:0;border-radius:15px;margin-top:12px}
+
+/* Mobile layout: safe-area aware, independent of the desktop phone frame. */
+@media(max-width:680px){
+ html,body{height:100%;overflow:hidden;overscroll-behavior:none;-webkit-text-size-adjust:100%}
+ .desk{height:100dvh;min-height:0;padding:0}
+ .phone{height:100dvh;max-height:100dvh;min-height:0;width:100%;border:0;border-radius:0;container-type:size}
+ .status{height:calc(36px + env(safe-area-inset-top,0px));padding:calc(9px + env(safe-area-inset-top,0px)) 22px 5px;flex:none}
+ .camera{display:none}
+ #view{min-height:0;flex:1;overscroll-behavior-y:contain;-webkit-overflow-scrolling:touch}
+ .nav{height:calc(38px + env(safe-area-inset-bottom,0px));padding-bottom:env(safe-area-inset-bottom,0px);flex:none}
+ .nav button{min-width:70px;min-height:38px}
+ .home.home-pages{height:100%;overscroll-behavior-x:contain}
+ .home-panel-primary{padding:7px 18px 116px}
+ .home-panel-primary .home-top{font-size:9px}
+ .home-panel-primary .clock{font-size:38px;line-height:1.05}
+ .home-panel-primary .date{font-size:11px}
+ .home-panel-primary .today-card{margin:7px 0 6px;padding:10px 12px}
+ .home-panel-primary .today-card h3{font-size:15px;margin:5px 0}
+ .home-panel-primary .today-card p{font-size:10px}
+ .home-panel-primary .widget-row{gap:9px}
+ .home-panel-primary .widget-row .widget{min-height:68px;padding:9px;border-radius:22px}
+ .home-panel-primary .widget-row h3{font-size:13px}
+ .home-panel-primary .call-catchup{margin:5px 0;padding:7px 10px;border-radius:16px;line-height:1.4}
+ .home-panel-primary .call-catchup span{font-size:8px}
+ .home-panel-primary .call-catchup b{font-size:10px;margin-top:2px}
+ .home-panel-primary .app-grid{padding:7px 4px 0;margin:3px 0 0;grid-template-rows:repeat(3,minmax(0,1fr));gap:2px 8px}
+ .home-panel-primary .app-grid .app-icon{width:40px;height:40px;margin-bottom:2px;border-radius:14px}
+ .home-panel-primary .app-grid .app-icon svg{width:35px;height:35px}
+ .home-panel-primary .app-grid .app-label{font-size:9px;margin-top:2px}
+ .home.home-pages>.dock{left:18px;right:18px;bottom:14px;padding:8px}
+ .home.home-pages>.all-apps{bottom:72px;font-size:9px;min-height:28px}
+ .home-pager-dots{bottom:105px}
+ .home-panel-secondary{padding:12px 18px 116px}
+ .second-page-heading{padding:20px 0}
+ .home-final-letter{padding:20px 18px}
+ #shade{inset:0 0 calc(38px + env(safe-area-inset-bottom,0px));padding:calc(23px + env(safe-area-inset-top,0px)) 16px 20px;overflow-y:auto;overscroll-behavior:contain;border-radius:0 0 24px 24px}
+ #shade .shade-head{font-size:37px}
+ #shade .quick-buttons button{min-height:44px}
+ #shade input[type=range]{min-height:24px}
+ #shade-music-frame iframe{height:145px}
+ .composer input,textarea.note,.phone-search{font-size:16px}
+ .composer{padding-bottom:max(12px,env(safe-area-inset-bottom,0px))}
+ .bar{padding:13px 16px;min-height:48px}
+ .bubble-date-nav{overflow-x:auto;scrollbar-width:none}
+ .bubble-date-nav button{flex-shrink:0}
+ .photo-stage{min-height:0}
+}
+@media(max-width:680px) and (max-height:700px){
+ .home-panel-primary{padding-top:4px}
+ .home-panel-primary .clock{font-size:31px}
+ .home-panel-primary .today-card{padding:7px 10px;margin:5px 0}
+ .home-panel-primary .today-card .progress-label{display:none}
+ .home-panel-primary .widget-row .widget{min-height:58px;padding:6px 8px}
+ .home-panel-primary .widget-row h3{font-size:12px;margin:3px 0}
+ .home-panel-primary .app-grid .app-icon{width:33px;height:33px}
+ .home-panel-primary .app-grid .app-icon svg{width:30px;height:30px}
+ .home-panel-primary .app-grid .app-label{font-size:8px}
+ .home-panel-primary .call-catchup span{display:none}
+}
