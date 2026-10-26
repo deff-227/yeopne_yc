@@ -60,3 +60,6 @@
 .margin-note p{font-size:14px!important;line-height:1.8;letter-spacing:1px!important}
 @media(max-width:680px){.home-panel{padding:10px 17px 54px}.home-panel-secondary{padding-top:18px}.home-page-spacer{min-height:20px}.home.home-pages>.dock{left:17px;right:17px;bottom:21px}.home-pager-dots{bottom:105px}.second-page-heading{padding:26px 0 22px}.home-final-letter{padding:21px 19px}}
 @media(max-width:390px){.home-panel{padding-left:14px;padding-right:14px}.home-panel-primary .today-card{padding:9px 11px}.home-panel-primary .widget-row .widget{padding:8px}.home.home-pages>.dock{left:14px;right:14px}.margin-note p{font-size:15px!important}}
+
+.home-tagline{position:absolute;left:0;right:0;bottom:137px;text-align:center;font-family:Georgia,'Noto Sans KR',serif;font-size:13px;letter-spacing:3px;color:#9c88a5;pointer-events:none}
+@media(max-width:680px){.home-tagline{bottom:127px;font-size:13px}}
