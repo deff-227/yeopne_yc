@@ -21,7 +21,7 @@
   };
 
   const fixStyleOct26 = document.createElement('style');
-  fixStyleOct26.textContent = 'textarea.note[data-note="letter-oct25"]{min-height:360px}';
+  fixStyleOct26.textContent = 'textarea.note[data-note="letter-oct25"]{min-height:360px}.margin-note p{font-size:12px;line-height:1.8;letter-spacing:1px}';
   document.head.appendChild(fixStyleOct26);
 
   const renderBeforeOct26 = render;
