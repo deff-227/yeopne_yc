@@ -63,3 +63,9 @@
 
 .home-tagline{position:absolute;left:0;right:0;bottom:137px;text-align:center;font-family:Georgia,'Noto Sans KR',serif;font-size:13px;letter-spacing:3px;color:#9c88a5;pointer-events:none}
 @media(max-width:680px){.home-tagline{bottom:127px;font-size:13px}}
+
+/* Restore the third app row on the first home screen. */
+.home-panel-primary .app-grid{grid-template-rows:repeat(3,auto);}
+.home-panel-primary .app-grid>.app{min-height:55px}
+.home-panel-primary .app-grid>.app:nth-child(n+9){display:flex}
+@media(max-width:680px){.home-panel-primary .app-grid{gap:6px 9px;margin-top:5px}.home-panel-primary .app-grid .app-icon{width:40px;height:40px}.home-panel-primary .app-grid .app-icon svg{width:36px;height:36px}.home-panel-primary .app-grid>.app{min-height:49px}.home-panel-primary .app-grid .app-label{font-size:8px}}
