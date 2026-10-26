@@ -38,7 +38,6 @@ const YECHAN_BUBBLE_OCT25=[
   {type:'text',time:'오후 9:09',text:'애드라아 ㅎㅎ'},
   {type:'text',time:'오후 9:10',text:'마음이 너무좋다아'},
   {type:'text',time:'오후 9:10',text:'엄청 찡하다ㅏ'},
-  {type:'text',time:'오후 9:11',text:'운동끝!'},
   {type:'photo',time:'오후 9:11',src:'assets/yechan-oct26-selfie-02.jpg'},
   {type:'text',time:'오후 9:12',text:'너무너무 너~~~~무 행복했어'},
   {type:'text',time:'오후 9:14',text:'나 카메라가 이상해진거가타'},
