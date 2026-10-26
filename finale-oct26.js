@@ -15,6 +15,7 @@
     document.querySelectorAll('.shade-date').forEach(el => {
       el.textContent = date.full;
     });
+    document.querySelectorAll('.lock>p').forEach((el,i)=>{el.textContent=i===0?date.full+' · 막콘이 끝난 밤':'너희 덕분에 행복한 3일이었어.';});
     const footer = document.querySelector('.margin-note p');
     if (footer) footer.innerHTML = '그러니 우리 더 빛나자<br>이 순간이 영원할 것처럼';
     return result;
