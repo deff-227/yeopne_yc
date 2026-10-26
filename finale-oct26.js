@@ -24,6 +24,27 @@
   fixStyleOct26.textContent = 'textarea.note[data-note="letter-oct25"]{min-height:360px}';
   document.head.appendChild(fixStyleOct26);
 
+  const renderBeforeOct26 = render;
+  render = function (...args) {
+    const result = renderBeforeOct26(...args);
+    refreshDate();
+    return result;
+  };
+  const lockBeforeOct26 = lock;
+  lock = function (...args) {
+    const result = lockBeforeOct26(...args);
+    refreshDate();
+    return result;
+  };
+  const shadeBeforeOct26 = notificationShade;
+  notificationShade = function (...args) {
+    const result = shadeBeforeOct26(...args);
+    document.querySelectorAll('.shade-date').forEach(el => {
+      el.textContent = PhoneTimeline.dateInfo(finaleCutoffOct26).full;
+    });
+    return result;
+  };
+
   tick();
   refreshDate();
 })();
