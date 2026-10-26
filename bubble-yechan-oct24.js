@@ -32,3 +32,21 @@ const YECHAN_BUBBLE_OCT24=[
   ,{type:"photo",time:"오후 11:19",src:"assets/yechan-oct24-bubble-01.jpg"}
   ,{type:"photo",time:"오후 11:20",src:"assets/yechan-oct24-bubble-02.jpg"}
 ];
+
+const YECHAN_BUBBLE_OCT25=[
+  {type:'text',time:'오전 8:20',text:'쪼은아침임!!'},
+  {type:'text',time:'오후 9:09',text:'애드라아 ㅎㅎ'},
+  {type:'text',time:'오후 9:10',text:'마음이 너무좋다아'},
+  {type:'text',time:'오후 9:10',text:'엄청 찡하다ㅏ'},
+  {type:'text',time:'오후 9:11',text:'운동끝!'},
+  {type:'photo',time:'오후 9:11',src:'assets/yechan-oct26-selfie-02.jpg'},
+  {type:'text',time:'오후 9:12',text:'너무너무 너~~~~무 행복했어'},
+  {type:'text',time:'오후 9:14',text:'나 카메라가 이상해진거가타'},
+  {type:'text',time:'오후 9:14',text:'보라색 꿈틀이가 생겨 자꾸'},
+  {type:'text',time:'오후 9:15',text:'흐엉ㅠ 3일 왜케 금방지나가ㅏㅏㅠ'},
+  {type:'text',time:'오후 9:17',text:'또 또 또 놀자! 알게찌'},
+  {type:'photo',time:'오후 9:18',src:'assets/yechan-oct26-selfie-01.jpg'}
+];
+const YECHAN_BUBBLE_OCT26=[
+  {type:'text',time:'오전 2:01',text:'폭자야 애드라 🧑🏻‍🦱🌙'}
+];
