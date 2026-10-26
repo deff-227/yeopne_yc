@@ -27,3 +27,24 @@
 .bubble-row .chat-photo-oct24{border:0;padding:0;max-width:72%;border-radius:16px;overflow:hidden;background:#eee5f4;line-height:0;flex-shrink:0}
 .bubble-row .chat-photo-oct24 img{display:block;width:100%;height:auto;max-height:300px;object-fit:cover}
 .bubble-image img{object-fit:contain;max-height:340px}
+
+/* Keep the phone home screen within the viewport; the remaining apps stay in the app drawer. */
+.home{height:100%;min-height:0;max-height:100%;overflow:hidden;display:flex;flex-direction:column;padding:10px 17px 7px}
+.home .clock{font-size:42px;line-height:1.08;margin-top:3px}
+.home .today-card{flex:0 0 auto;margin:10px 0 8px;padding:11px 13px}
+.home .today-card h3{font-size:15px;margin:5px 0}
+.home .today-card p{font-size:10px;margin:4px 0}
+.home .widget-row{flex:0 0 auto}
+.home .widget-row .widget{min-height:78px;padding:10px;margin:0}
+.home .widget-row .widget h3{font-size:13px;margin:5px 0}
+.home .widget-row .widget button{font-size:9px;padding:6px 9px}
+.home .app-grid{flex:0 0 auto;grid-template-rows:repeat(2,auto);gap:8px 9px;margin-top:5px;overflow:hidden}
+.home .app-grid>.app:nth-child(n+9){display:none}
+.home .app-grid>.app{min-height:55px}
+.home .app-grid .app-icon{width:44px;height:44px;margin-bottom:3px}
+.home .app-grid .app-icon svg{width:39px;height:39px}
+.home .app-grid .app-label{font-size:9px;line-height:1.2;margin-top:3px}
+.home .all-apps{flex:0 0 auto;margin:3px auto 0;padding:3px 14px}
+.home .dock{flex:0 0 auto;margin-top:auto!important;padding:7px;transform:none}
+.home .dock .app-icon{width:42px;height:42px}
+.home>.mini-label{flex:0 0 auto;font-size:8px;margin:5px 0 0}
