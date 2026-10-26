@@ -89,3 +89,29 @@
 .home-panel-primary>.mini-label{display:none}
 @media(max-width:680px){.home-panel-primary{padding-top:6px;padding-bottom:125px}.home-panel-primary .clock{font-size:38px}.home-panel-primary .app-grid{margin-top:5px;grid-template-rows:repeat(3,minmax(0,1fr))}.home-panel-primary .app-grid .app-icon{width:41px;height:41px;margin-bottom:2px}.home-panel-primary .app-grid .app-label{margin-top:2px}}
 @media(max-width:680px) and (max-height:700px){.home-panel-primary{padding-bottom:125px}.home-panel-primary .clock{font-size:34px}.home-panel-primary .today-card{margin:5px 0;padding:7px 10px}.home-panel-primary .widget-row .widget{min-height:62px;padding:6px}.home-panel-primary .app-grid .app-icon{width:35px;height:35px}.home-panel-primary .app-grid .app-icon svg{width:31px;height:31px}}
+
+/* Allow notification badges to extend past their icons. */
+.home-panel-primary .app-grid{overflow:visible;padding:8px 5px 0}
+.home-panel-primary .app-grid>.app{overflow:visible}
+.home-panel-primary .app>.app-notice-badge{top:2px;right:1px;z-index:3;box-shadow:0 0 0 2px #eee7f2}
+/* Translucent quick settings and grouped notification cards. */
+#shade{padding:34px 18px 24px;background:linear-gradient(155deg,#f6f1f9f5,#e6ddecf5);backdrop-filter:blur(28px);border-radius:0 0 28px 28px;box-shadow:0 14px 40px #65527025}
+#shade:before{content:'';display:block;width:32px;height:4px;border-radius:4px;background:#b8a6c4;margin:-18px auto 20px}
+#shade .shade-head{font-size:43px;font-weight:400;letter-spacing:-2px;line-height:1.2}
+#shade .shade-head button{width:32px;height:32px;border-radius:50%;background:#ffffff85;font-size:23px;color:#8f789e;letter-spacing:0}
+#shade .shade-date{font-size:11px;margin:6px 0 18px;color:#8f789e}
+#shade .quick-buttons{margin:12px 0 10px;gap:8px;justify-content:space-around;padding:16px 8px;background:#ffffff78;border:1px solid #ffffffa0;border-radius:25px}
+#shade .quick-buttons button{flex:1}
+#shade .quick-buttons b{width:49px;height:49px;border-radius:50%;background:#e4dbea;box-shadow:inset 0 1px 0 #ffffff80}
+#shade .quick-buttons .on b{background:#a88dbd;box-shadow:0 4px 10px #9374aa25;color:#fff}
+#shade .quick-buttons small{font-size:9px;color:#8c749b;margin-top:8px}
+#shade .brightness{background:#ffffff80;border:1px solid #ffffffa0;border-radius:24px;padding:12px 16px;margin:10px 0 22px;color:#aa8fba}
+#shade .brightness input{height:6px;cursor:pointer}
+#shade .shade-title{align-items:center;padding:0 5px;margin-bottom:12px;font-size:11px;color:#8b7399}
+#shade .shade-title button{background:#ffffff70;padding:7px 10px;border-radius:13px;font-size:9px}
+#shade .shade-notice{padding:16px;border-radius:22px;background:#fffafde8;border:1px solid #ffffffc0;box-shadow:0 3px 12px #7e65950a}
+#shade .shade-notice small{font-size:9px;letter-spacing:.2px;color:#aa91b5}
+#shade .shade-notice b{font-weight:500;margin:8px 0 5px;font-size:12px}
+#shade .shade-notice span{font-size:11px;line-height:1.7;color:#8d789b}
+#shade .chat-notice-card{margin-bottom:10px}
+#shade .notice-dismiss{top:9px;right:9px;border-radius:50%;font-size:17px}
